@@ -1,0 +1,53 @@
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Toppagestyle.css">
+        <link rel="stylesheet" type="text/css" href="Toppagestyle-media.css">        
+        <script>
+            
+            function even(){
+                gettim();
+                setTimeout(back,2000);
+            }
+
+            function gettim(){
+                var ti = new Date();
+                document.getElementById("time").innerHTML = ti;
+            }
+            function back(){
+                document.getElementById("time").innerHTML = "Html & Css " ;
+            }
+            
+            
+        </script>
+    </head>
+
+    <body >
+        <div class="container">
+            <div class="headimg">
+                <!-- head img-->
+                <img src="pic/cat.jpg" class="cat">
+                <p id="time" onmouseover="even()" >Html Css test</p>                
+            </div>
+            <div id="nabar"> 
+                <!-- navigation bar -->
+                <ul>
+                    <li><a href="page.html">html</a></li>
+                    <li><a href="https://www.w3schools.com">css</a></li>
+                    <li><a href="https://www.w3schools.com">js</a></li>  
+                    <li><a href="#home">html</a></li>
+                    <li><a href="https://www.w3schools.com">css</a></li>
+                    <li  class="DropBox"><a href="#home">Dropbax</a>
+                        <div class="DpBoxcontent">
+                            <a href="page.html">Dropbax</a>
+                            <a href="#home">Dropbax</a>
+                            <a href="#home">Dropbax</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </body>
+
+
+</html>

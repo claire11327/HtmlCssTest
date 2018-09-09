@@ -1,0 +1,93 @@
+.container{
+    display: grid;
+    /*grid-template-rows: 4fr 0.5fr ;*/
+    
+}
+.headimg{
+    /*border: 10px dashed rgb(212, 209, 202);*/
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+.cat{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    opacity: 0.8; 
+
+}
+
+#time{
+    position: absolute;
+    bottom: 10px;
+    left: 50px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3vw; 
+    color: rgb(19, 40, 100);
+    
+}
+
+
+
+
+
+
+/*-------navigation bar-----*/
+
+ul{ 
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(white,gray,white);
+
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(212, 209, 202);
+    padding: 1em 1em;
+    background-image: linear-gradient(white,gray,white);
+
+}
+
+div li a:hover{
+    color: rgb(138, 127, 127);
+    background-image: linear-gradient(white,rgba(253, 250, 216, 0.884),white);
+}
+
+/*----DropBox-----*/
+
+.DpBoxcontent{
+    display: none;
+    position: absolute;
+    background-color : #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.DropBox:hover .DpBoxcontent{
+     display: block;
+}
+
+
+
+
+
+
+/*----DropBox-----*/
+/*-------navigation bar-----*/
+
+
