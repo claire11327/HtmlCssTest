@@ -2,28 +2,50 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="pagestyle.css">
+        <script>
+            window.onresize = sidetonav();
+            function sidetonav(){
+                if(window.innerWidth < 500){
+                    document.getElementById("try").style.display = "block";
+                    //document.getElementById("title").innerHTML = "yes";
+                }
+                else{
+                    document.getElementById("try").style.display = "none";
+                    
+                }
+            }
+            function show(){
+                document.getElementById("leftmenu").style.display = "block";
+            }
+        </script>
     </head>
 
-    <body>
+    <body onresize="sidetonav()">
         <div class="container">  
             <div class="head">
                 <!-- head img-->
-                <img src="pic/sakula.jpg" class="catpage">
-                <a href="Toppage.html" class="Toppage">cat</a>
+                <a href="Toppage.html"><img src="pic/sakula.jpg" class="catpage"></a>
             </div>
             <!-- body part -->
-            <div class="leftmenu">
-                <!-- side menu left-->
+            <div id="title">
+                <!-- title -->
+                    <li><img src = "pic/menu.png" id = "try" onclick="show()"></li>                  
+                    <li><a href="Toppage.html">toppage</a></li>
+                
+            </div>
+            <div class="leftmenu" id = "leftmenu">
+                <!-- side menu left-->                        
                 leftmenu
             </div>
             <div class="main">
                 <!-- main -->
                 main
-            </div>
+            </div>            
             <div class="rightmenu">
-                <!-- side menu right -->
-                rightmenu
-            </div>
+                    <!-- side menu right -->
+                    rightmenu
+                </div>
+            
             <div class="footer">
                 <!-- footer -->
                 footer
